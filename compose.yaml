@@ -1,0 +1,8 @@
+ services:
+  locus-fulguris:
+      build: .
+      container_name: locus-fulguris
+      restart: unless-stopped
+      ports:
+        - "${LNADDR_PORT}:${LNADDR_PORT}"
+      env_file: ".env"

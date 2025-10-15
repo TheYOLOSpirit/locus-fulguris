@@ -1,0 +1,23 @@
+{
+  "name": "locus-fulguris",
+  "version": "0.1.0",
+  "description": "A Simple NodeJS Lightning Address Server",
+  "license": "Unlicense",
+  "author": "TheYOLOSpirit",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
+  },
+  "devDependencies": {
+    "ts-node-dev": "2.0.0",
+    "typescript": "5.9.3"
+  },
+  "dependencies": {
+    "@types/express": "5.0.3",
+    "express": "5.1.0",
+    "lightning": "10.27.2",
+    "winston": "3.18.3"
+  }
+}
