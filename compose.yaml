@@ -3,4 +3,10 @@
       build: .
       container_name: locus-fulguris
       restart: unless-stopped
+      networks:
+      - default
+      - private_net
       env_file: ".env"
+networks:
+  private_net:
+    external: true
