@@ -1,12 +1,13 @@
- services:
+
+services:
   locus-fulguris:
       build: .
       container_name: locus-fulguris
       restart: unless-stopped
       networks:
       - default
-      - private_net
+      - public_net
       env_file: ".env"
 networks:
-  private_net:
+  public_net:
     external: true
